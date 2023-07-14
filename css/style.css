@@ -1,3 +1,36 @@
-div {
+h1, h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  color: red;
+}
+
+li {
+  border: 1px solid peru;
+}
+
+#first-listed-item {
+  background-color: orange;
+}
+
+li a {
+  color: palegreen;
+}
+
+.bio-box {
   border: 1px solid black;
 }
+
+.link-box {
+  background-color: azure;
+}
+
+.bio-box a {
+  color: green;
+}
+
+#exec-bio {
+  background-color: lightgray;
+}
+
