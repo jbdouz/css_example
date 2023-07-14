@@ -1,36 +1,45 @@
+/* global styles */
+html {
+  background: orange;
+}
+
+a {
+  color: rgba(238, 95, 255, 0.2);
+}
+
+div {
+  border: 1px solid #00ff00;
+}
+
+/* headings style */
 h1, h2 {
   font-family: 'Courier New', Courier, monospace;
 }
 
-a {
-  color: red;
-}
-
+/* listed item style */
 li {
   border: 1px solid peru;
-}
-
-#first-listed-item {
-  background-color: orange;
-}
-
-li a {
-  color: palegreen;
-}
-
-.bio-box {
-  border: 1px solid black;
-}
-
-.link-box {
   background-color: azure;
 }
 
-.bio-box a {
+li#first-item {
+  background-color: orange;
+}
+
+/* bio styles */
+.bio-box {
+  border: 1px solid #000000;
+  background-color: azure;
+}
+
+.bio-copy a {
   color: green;
 }
 
-#exec-bio {
-  background-color: lightgray;
+/* social styles */
+.social-link {
+  background: rgba(150, 150, 150, 0.3);
+  color: blue;
 }
+
 
