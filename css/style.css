@@ -1,6 +1,8 @@
 /* global styles */
-html {
+html, body {
   background: orange;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -11,9 +13,26 @@ div {
   border: 1px solid #00ff00;
 }
 
+/* IMG STYLE */
+img {
+  width: 100%;
+}
+
 /* headings style */
-h1, h2 {
+h1 {
   font-family: 'Courier New', Courier, monospace;
+  margin-top: 0;
+}
+
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+}
+
+/* HERO STYLE */
+.full-hero {
+  background-color: #c7dbfc;
+  width: 75vw;
 }
 
 /* listed item style */
@@ -22,14 +41,23 @@ li {
   background-color: azure;
 }
 
-li#first-item {
-  background-color: orange;
+/* bio styles */
+
+.bio-box {
+  background-color: azure;
+  border: 1px solid #000000;
+  font-size: 1rem;
+  margin: 10px;
+  padding: 0 2.5rem;
+  width: 50%;
 }
 
-/* bio styles */
-.bio-box {
-  border: 1px solid #000000;
-  background-color: azure;
+.bio-box h3 {
+  font-size: 1.5rem;
+}
+
+.bio-copy {
+  font-size: 1rem;
 }
 
 .bio-copy a {
