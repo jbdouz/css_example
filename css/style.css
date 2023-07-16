@@ -16,6 +16,8 @@ div {
 .header {
   background-color: black;
   color: white;
+  position: fixed;
+  width: 100vw;
 }
 
 .header-logo {
@@ -37,25 +39,33 @@ div {
   float: right;
   padding: 5.5vh 60px 0 0;
 }
+.footer-nav {
+  padding: 5.5vh 20px 0 0;
+}
 
-.header-nav > li:first-child a {
+.header-nav > li:first-child a,
+.footer-nav > li:first-child a {
   color: #ed6e2f;
 }
-.header-nav > li:first-child a:hover {
+.header-nav > li:first-child a:hover 
+.footer-nav > li:first-child a:hover {
   color: white;
 }
 
-.header-nav > li {
+.header-nav > li,
+.footer-nav > li {
   display: inline-block;
   margin-left: 1em;
 }
 /* targets all the li under header-nav except the first one */
-.header-nav > li ~ li {
+.header-nav > li ~ li,
+.footer-nav > li ~ li {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 1em;
 }
 
-.header-nav a {
+.header-nav a,
+.footer-nav a {
   color: #fff;
   font-size: 0.8rem;
   font-weight: bold;
@@ -63,17 +73,13 @@ div {
   text-transform: uppercase;
 }
 
-.header-nav a:hover, .header-nav a:active {
+.header-nav a:hover, .header-nav a:active,
+.footer-nav a:hover, .footer-nav a:active {
   color: #ed6e2f;
 }
 
 .header-logo:hover, .header-logo:active {
   opacity: 0.5;
-}
-
-/* IMG STYLE */
-img {
-  width: 100%;
 }
 
 /* headings style */
@@ -103,6 +109,19 @@ h2 + p {
 }
 .full-hero:hover {
   background-color: goldenrod;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  /* text-align: center; */
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.social-list > li {
+  display: inline-block;
 }
 
 /* listed item style */
@@ -186,13 +205,21 @@ h2 + p {
   background-color: goldenrod;
 }
 
-.social-list {
-  list-style: none;
-  padding: 0;
+/* FOOTER STYLE */
+.footer {
+  background-color: black;
+  padding: 10vh 0 15vh;
   text-align: center;
 }
-
-.social-list > li {
-  display: inline-block;
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  color: white;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
 }
 
