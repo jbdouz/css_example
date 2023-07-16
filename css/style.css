@@ -12,18 +12,51 @@ div {
 }
 
 /* HEADER SYTLE */
+/* header is a tag, so technically we could just do header {}. but some old browser (not much existent though) does not have this tag, so for safety, give it a class .header */
+.header {
+  background-color: black;
+  color: white;
+}
+
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+
+.header-logo img {
+  width: 4.3vh;
+}
+
 .header-nav {
-  float: right
+  float: right;
+  padding: 5.5vh 60px 0 0;
+}
+
+.header-nav > li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav > li:first-child a:hover {
+  color: white;
 }
 
 .header-nav > li {
   display: inline-block;
-  padding: 5.5vh 60px 0 0;
   margin-left: 1em;
+}
+/* targets all the li under header-nav except the first one */
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1em;
 }
 
 .header-nav a {
-  color: #000;
+  color: #fff;
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
@@ -50,8 +83,15 @@ h1 {
 }
 
 h2 {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Helvetica, Courier, monospace;
   font-size: 30px;
+}
+h2 + p {
+  font-size: 0.8em;
+  font-style: italic;
+  margin: 1em auto 0;
+  max-width: 70%;
+  text-align: center;
 }
 
 /* HERO STYLE */
@@ -60,6 +100,9 @@ h2 {
   background-color: #c7dbfc;
   margin: 0 auto;
   width: 75vw;
+}
+.full-hero:hover {
+  background-color: goldenrod;
 }
 
 /* listed item style */
@@ -138,6 +181,9 @@ h2 {
   text-align: center;
   text-decoration: none;
   width: 2.5em;
+}
+.social-link:hover {
+  background-color: goldenrod;
 }
 
 .social-list {
