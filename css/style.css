@@ -11,6 +11,33 @@ div {
   border: 1px solid #00ff00;
 }
 
+/* HEADER SYTLE */
+.header-nav {
+  float: right
+}
+
+.header-nav > li {
+  display: inline-block;
+  padding: 5.5vh 60px 0 0;
+  margin-left: 1em;
+}
+
+.header-nav a {
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-nav a:hover, .header-nav a:active {
+  color: #ed6e2f;
+}
+
+.header-logo:hover, .header-logo:active {
+  opacity: 0.5;
+}
+
 /* IMG STYLE */
 img {
   width: 100%;
@@ -29,6 +56,7 @@ h2 {
 
 /* HERO STYLE */
 .full-hero {
+  clear: right;
   background-color: #c7dbfc;
   margin: 0 auto;
   width: 75vw;
