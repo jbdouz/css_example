@@ -1,6 +1,14 @@
 /* global styles */
 body {
   font-family: Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-container {
+  flex-grow: 1;
+  padding: 10vh 0 0;
+  width: 100%;
 }
 
 a {
@@ -17,8 +25,12 @@ p {
   background-color: black;
   color: white;
   position: fixed;
+  flex-grow: 1;
   width: 100vw;
   z-index: 20;
+}
+.footer {
+  /* flex-grow: 1; */
 }
 
 .header-logo {
@@ -107,7 +119,7 @@ h2 + p {
   background-color: #c7dbfc;
   box-sizing: border-box;
   clear: right;
-  height: 100vh;
+  height: 90vh;
   margin: 0 auto;
   padding-top: 10vh;
   /* padding is set to 10vh because height of logo in the header is set to 10vh */
